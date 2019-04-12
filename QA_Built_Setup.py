@@ -47,7 +47,7 @@ for pfile in os.walk(Path):
         elif i == 'remote_config_defaults.xml':
             with fileinput.FileInput(pfile[0]+'\\remote_config_defaults.xml', inplace=True) as file:
                 for line in file:
-                    if "For production Build" in line:
+                    if "dev" in line:
                         print(line, end='')
                     else:
                         print(line.replace("e5krp",
