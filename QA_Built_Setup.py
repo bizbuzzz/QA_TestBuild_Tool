@@ -35,9 +35,16 @@ for pfile in os.walk(Path):
                 for line in file:
                     if "For production Build" in line:
                         print(line, end='')
+                    elif "LICENSE" in line:
+                        print(line, end='')
+                    elif "Create" in line:
+                        print(line, end='')
+                    elif "ERROR" in line:
+                        print(line.replace("\"ERROR\"", "\"DEBUG\""), end='')
+                    elif "<!--" in line:
+                        print(line.replace("<!--", " ").replace("-->", " "), end='')
                     else:
-                        print(line.replace("\"ERROR\"",
-                                       "\"DEBUG\""), end='')
+                        print(line, end='')
             print("FoundFile at:"+pfile[0]+"\\logback.xml")
         # elif pfile == 'proguard-rules.pro':
         #     with fileinput.FileInput('proguard-rules.pro', inplace=True) as file:
