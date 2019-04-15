@@ -66,7 +66,7 @@ for pfile in os.walk(Path):
                     if "For production Build" in line:
                         print(line, end='')
                     else:
-                        print(line.replace("\"https://qaserver-dot-bizbuzzzdevbed-4e5c6.appspot.com\"",
+                        print(line.replace("\"https://bizbuzzzdevbed-4e5c6.appspot.com\"",
                                         "\"https://qaserver-dot-bizbuzzztestbed-8ba40.appspot.com\""), end='')
             print("FoundFile at:"+pfile[0]+"\\RestHelper.java")
         #elif i == 'google-services.json':
