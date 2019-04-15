@@ -69,10 +69,10 @@ for pfile in os.walk(Path):
                         print(line.replace("\"https://bizbuzzzdevbed-4e5c6.appspot.com\"",
                                         "\"https://qaserver-dot-bizbuzzztestbed-8ba40.appspot.com\""), end='')
             print("FoundFile at:"+pfile[0]+"\\RestHelper.java")
-        #elif i == 'google-services.json':
-         #   with urllib.request.urlopen(URL) as response,open(pfile[0]+"\\google-services.json", 'wb') as out_file:
-          #      shutil.copyfileobj(response, out_file)
-           # print("FoundFile at:"+pfile[0]+"\\google-services.json")
+        elif i == 'google-services.json':
+            if "app" in pfile[0]:
+                copyfile(os.getcwd()+"\\google-services.json", pfile[0]+"\\google-services.json")
+                print("FoundFile at:" + pfile[0] + "\\google-services.json")
         else:
             count=count+1
 
