@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "599768896409",
+    "firebase_url": "https://bizbuzzztestbed-8ba40.firebaseio.com",
+    "project_id": "bizbuzzztestbed-8ba40",
+    "storage_bucket": "bizbuzzztestbed-8ba40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599768896409:android:f822a2982aa794be",
+        "android_client_info": {
+          "package_name": "com.bizbuzzz.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599768896409-430g6aou77c5uuuobrn7ak8e6m3lpj2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bizbuzzz.app",
+            "certificate_hash": "3b958b7f04cbe99a54db4d03ac9a86b945dd5b7d"
+          }
+        },
+        {
+          "client_id": "599768896409-cjsl8gjntj75lbeoju93sqtpd8ae3vac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bizbuzzz.app",
+            "certificate_hash": "214a397f8bd40b49e2bfc359e0ce95f500390648"
+          }
+        },
+        {
+          "client_id": "599768896409-1tkqr3150mtm5p923kcv2h8paqodc838.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bizbuzzz.app",
+            "certificate_hash": "0a99185e25087a9f7d95c7944e7f1e74e74e7197"
+          }
+        },
+        {
+          "client_id": "599768896409-os7g83peb2pnrkn42ovke4bp58p9ninf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTa01FnkrkCjybY0ViNBP2sUUaqwY9yQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599768896409-os7g83peb2pnrkn42ovke4bp58p9ninf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "599768896409-22s1oft90a4j62thc4mfcenmgb9gji3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bizbuzzz.iostest.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
