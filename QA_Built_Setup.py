@@ -8,6 +8,7 @@ import fileinput
 import os
 import urllib.request
 import shutil
+from shutil import copyfile
 
 Path = os.getcwd()
 count = 0
