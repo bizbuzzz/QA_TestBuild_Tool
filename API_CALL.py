@@ -60,5 +60,5 @@ for i in range(len(array)):
     url = 'https://appstaging-dot-bizbuzzztestbed-8ba40.appspot.com/commons/start_cash_back_offer_for_biz/'+array[i]
     apiresponse = requests.post(url, json=body, headers=headers)
     jsons = apiresponse.json()
-    print("UserID: "+array[i]+"    result:" + jsons['result']+",   code:" + str(apiresponse.status_code))
+    print("UserID: "+array[i]+ "    result:" + jsons['result']+",   code:" + str(apiresponse.status_code))
 
