@@ -8,7 +8,7 @@ before_all do
 end
 
 platform :ios do
-	private_lane :build do
+	lane :build do
 		gym(
 			scheme: "BBMobile",
 			workspace: "./ios/BBMobile.xcworkspace",
@@ -28,7 +28,7 @@ end
 
 platform :android do
 
- 	private_lane :build do
+ 	lane :build do
 		gradle(task: 'clean', project_dir: 'android/')
 		gradle(task: 'assemble', build_type: 'Release', project_dir: 'android/')
 		slack_upload(
@@ -40,7 +40,7 @@ platform :android do
 			)
 	end
 	
-	private_lane :beta do
+	lane :beta do
 		gradle(task: 'clean', project_dir: 'android/')
 		gradle(task: 'assemble', build_type: 'Debug', project_dir: 'android/')
 		slack_upload(
